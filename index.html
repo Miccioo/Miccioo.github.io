@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biografi Saya</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      hr {
+        margin: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header: Judul dan Navigasi -->
+    <header class="header_1">
+      <nav class="nav grid">
+        <div>
+            <a class="nav_logo">Zaidan | Web</a>
+        </div>
+        
+        <div class="nav_menu">
+          <ul class="nav_list">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#tentang">ABOUT</a></li>
+            <li><a href="#keterampilan">SKILLS</a></li>
+            <li><a href="#pengalaman">PROJECT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Konten Utama -->
+    <main>
+      <!-- Bagian Tentang (Biografi) -->
+      <section class="home_1" id="home">
+        <div class="HOME">
+          <h1>Zaidan Arkaan<br>I'm Web Developer</h1>
+        </div>
+      </section>
+      <article id="tentang">
+        <h3>Tentang Saya</h3>
+        <p>
+          Halo, saya adalah seorang Web Developer. Saya memiliki minat dalam pengembangan web, pemrograman, dan desain.
+        </p>
+      </article>
+
+      <!-- Bagian Keterampilan: Tabel Keterampilan -->
+      <article id="keterampilan">
+        <h3>Keterampilan</h3>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Keterampilan</th>
+              <th>Proficiency</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HTML/CSS</td>
+              <td>Beginner</td>
+            </tr>
+            <tr>
+              <td>Python</td>
+              <td>Beginner</td>
+            </tr>
+            <tr>
+              <td>C</td>
+              <td>Intermediete</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+    </main>
+
+    <!-- Aside: Informasi Tambahan -->
+    <article>
+      <h4>Hobi</h4>
+      <p>Saya suka coding, olahraga, dan eksplorasi hal-hal baru.</p>
+    </article>
+
+    <!-- Bagian Pengalaman -->
+    <article id="pengalaman">
+      <h3>Pengalaman</h3>
+      <ul>
+        <li>Perusahaan NBS: Posisi Intership (2025)</li>
+      </ul>
+    </article>
+
+    <div class="container" id="contact">
+      <h1>Hubungi Saya</h1>
+      <input type="text" id="name" name="name" placeholder="Name" /><br /><br />
+      <input type="text" id="email" placeholder="Email">
+      <br><button onclick="sent()">Submit</button> <!-- Tidak sempat membuat function ini-->
+    </div>
+
+    
+
+    <!-- Footer: Kontak -->
+    <footer id="kontak">
+      <div class=""></div>
+    </footer>
+  </body>
+</html>
