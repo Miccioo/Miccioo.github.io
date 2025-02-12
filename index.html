@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Biografi Saya</title>
-    <link rel="stylesheet" href="Asset/Style.css" />
+    <title>Zaidan Arkaan</title>
+    <link rel="stylesheet" href="Asset/Style/Style.css"/>
+    <script src="https://kit.fontawesome.com/0ef4ec629f.js" crossorigin="anonymous"></script>
     <style>
       hr {
         margin: 40px;
@@ -12,94 +13,98 @@
     </style>
   </head>
   <body>
+    <div class="container">
     <!-- Header: Judul dan Navigasi -->
-    <header class="header_1">
-      <nav class="nav grid">
-        <div>
-            <a class="nav_logo">Zaidan | Web</a>
-        </div>
-        
-        <div class="nav_menu">
-          <ul class="nav_list">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#tentang">ABOUT</a></li>
-            <li><a href="#keterampilan">SKILLS</a></li>
-            <li><a href="#pengalaman">PROJECT</a></li>
-            <li><a href="#contact">CONTACT</a></li>
+      <aside class="sidebar">
+        <header class="header_1">
+            <div class="profile">
+              <img src="Asset/Img/profile3.jpg" alt="Profile Picture">
+              <h3>Zaidan Arkaan</h3>
+            </div>
+            <div class="social_icon">
+              <a href="https://www.instagram.com/zaidaanz"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/zaidan-arkaan-02374b307/"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://api.whatsapp.com/send/?phone=6282120810541&text&type=phone_number&app_absent=0"><i class="fa fa-whatsapp" aria-hidden="true"></i>
+              </a>
+            </div>
+        </header>
+
+        <nav>
+          <ul>
+            <li><a href="#home"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+            <li><a href="#tentang"><i class="fa-solid fa-user"></i> About</a></li>
+            <li><a href="#skill"><i class="fa fa-cogs" aria-hidden="true"></i> Skills</a></li>
+            <li><a href="#pengalaman"><i class="fa-solid fa-briefcase"></i> Project</a></li>
+            <li><a href="#contact"><i class="fa fa-address-book" aria-hidden="true"></i> Contact</a></li>
           </ul>
+        </nav>
+      </aside>
+      
+
+      <!-- Konten Utama -->
+      <main class="content">
+        <!-- Bagian Tentang (Biografi) -->
+        <section class="home_1" id="home">
+          <div class="HOME">
+            <h1>Zaidan Arkaan<br>I'm <span class="hightlight">Web Developer</span></h1>
+          </div>
+        </section>
+        <article id="tentang">
+          <h3>Tentang Saya</h3>
+          <p>
+            Halo, saya adalah seorang Web Developer. Saya memiliki minat dalam pengembangan web, pemrograman, dan desain.
+          </p>
+        </article>
+
+        <!-- Bagian Keterampilan: Tabel Keterampilan -->
+        <article id="skill">
+          <h3>Keterampilan</h3>
+          <table border="1">
+            <thead>
+              <tr>
+                <th>Keterampilan</th>
+                <th>Proficiency</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>HTML/CSS</td>
+                <td>Beginner</td>
+              </tr>
+              <tr>
+                <td>Python</td>
+                <td>Beginner</td>
+              </tr>
+              <tr>
+                <td>C</td>
+                <td>Intermediete</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+
+        <article>
+          <h3>Hobi</h3>
+          <p>Saya suka coding, olahraga, dan eksplorasi hal-hal baru.</p>
+        </article>
+
+        <!-- Bagian Pengalaman -->
+        <article id="pengalaman">
+          <h3>Pengalaman</h3>
+          <ul>
+            <li>Perusahaan NBS: Posisi Intership (2025)</li>
+          </ul>
+        </article>
+
+        <div class="contact_button" id="contact">
+          <h1>Hubungi Saya</h1>
+          <input type="text" id="name" name="name" placeholder="Name" /><br /><br />
+          <input type="text" id="email" placeholder="Email">
+          <br><button onclick="sent()">Submit</button> <!-- Tidak sempat membuat function ini-->
         </div>
-      </nav>
-    </header>
 
-    <!-- Konten Utama -->
-    <main>
-      <!-- Bagian Tentang (Biografi) -->
-      <section class="home_1" id="home">
-        <div class="HOME">
-          <h1>Zaidan Arkaan<br>I'm Web Developer</h1>
-        </div>
-      </section>
-      <article id="tentang">
-        <h3>Tentang Saya</h3>
-        <p>
-          Halo, saya adalah seorang Web Developer. Saya memiliki minat dalam pengembangan web, pemrograman, dan desain.
-        </p>
-      </article>
-
-      <!-- Bagian Keterampilan: Tabel Keterampilan -->
-      <article id="keterampilan">
-        <h3>Keterampilan</h3>
-        <table border="1">
-          <thead>
-            <tr>
-              <th>Keterampilan</th>
-              <th>Proficiency</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>HTML/CSS</td>
-              <td>Beginner</td>
-            </tr>
-            <tr>
-              <td>Python</td>
-              <td>Beginner</td>
-            </tr>
-            <tr>
-              <td>C</td>
-              <td>Intermediete</td>
-            </tr>
-          </tbody>
-        </table>
-      </article>
-    </main>
-
-    <!-- Aside: Informasi Tambahan -->
-    <article>
-      <h4>Hobi</h4>
-      <p>Saya suka coding, olahraga, dan eksplorasi hal-hal baru.</p>
-    </article>
-
-    <!-- Bagian Pengalaman -->
-    <article id="pengalaman">
-      <h3>Pengalaman</h3>
-      <ul>
-        <li>Perusahaan NBS: Posisi Intership (2025)</li>
-      </ul>
-    </article>
-
-    <div class="container" id="contact">
-      <h1>Hubungi Saya</h1>
-      <input type="text" id="name" name="name" placeholder="Name" /><br /><br />
-      <input type="text" id="email" placeholder="Email">
-      <br><button onclick="sent()">Submit</button> <!-- Tidak sempat membuat function ini-->
+        <!-- Footer: Kontak -->
+      </main>
     </div>
-
-    
-
-    <!-- Footer: Kontak -->
-    <footer id="kontak">
-      <div class=""></div>
-    </footer>
   </body>
 </html>
